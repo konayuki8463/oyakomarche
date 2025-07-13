@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>親子マルシェ in きさてらす</title>
+  
+  <meta name="description" content="親子で1日楽しめる体験型マルシェ！ハンドメイド作品の販売やワークショップ、スイーツなど、楽しいコンテンツが盛りだくさん。2025年8月13日、きさてらすで開催！">
 
   <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
 
@@ -23,6 +25,10 @@
       --sub:#87cefa;      /* 水色 */
       --text:#5d4037;     /* こげ茶 */
       --base:#fffef5;     /* クリーム */
+    }
+    /* 【改善点1】スムーズスクロールをここに追加 */
+    html {
+      scroll-behavior: smooth;
     }
     body{font-family:'M PLUS Rounded 1c',sans-serif;color:var(--text);background:var(--base);}  
     .bg-dots{background-image:radial-gradient(circle,rgba(255,105,180,0.1) 1px,transparent 1px);background-size:1.25rem 1.25rem;}  
@@ -62,13 +68,13 @@
 
   <section id="about" class="py-16 bg-white bg-dots">
     <h2 class="text-3xl font-extrabold text-center mb-8">イベントコンセプト</h2>
-    <p class="max-w-3xl mx-auto text-center text-lg leading-relaxed px-4">ハンドメイド作品の販売やワークショップ、スイーツなど、親子で１日楽しめるコンテンツが盛りだくさん！暑い夏でも屋内会場なので快適にお過ごしいただけます。</p>
+    <p class="max-w-3xl mx-auto text-center text-lg leading-relaxed px-4">ハンドメイド作品の販売やワークショップ、ベビーマッサージなど0歳から大人まで１日楽しめるコンテンツが盛りだくさん！日々頑張っている子育て世帯に向けた親子イベントです。暑い夏でも屋内会場なので快適にお過ごしいただけます。</p>
   </section>
 
   <section id="flyer" class="py-16 bg-[var(--base)]">
     <h2 class="text-3xl font-extrabold text-center mb-8">フライヤーのダウンロード</h2>
     <div class="flex justify-center">
-      <a href="assets/flyer.pdf" class="inline-block bg-[var(--sub)] text-white font-bold px-6 py-3 rounded-full shadow hover:bg-opacity-80 transition" target="_blank" download>イベントのフライヤーはこちら (PDF)</a>
+      <a href="assets/flyer.pdf" class="inline-block bg-[var(--sub)] text-white font-bold px-6 py-3 rounded-full shadow hover:bg-opacity-80 transition" target="_blank" download>イベントのチラシはこちら (PDF)</a>
     </div>
   </section>
 
@@ -79,102 +85,102 @@
       <a href="https://www.instagram.com/h.sayar77" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
         <img src="assets/h.sayar77.png" alt="SAYAR" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
         <span class="text-base font-bold">SAYAR</span>
-        <span class="text-xs font-semibold bg-blue-100 text-blue-500 px-2 py-0.5 rounded-full">アクセサリー・カスタムビーズ作り</span>
+        <span class="text-xs font-semibold bg-pink-100 text-pink-500 px-2 py-0.5 rounded-full">アクセサリー・カスタムビーズ作り</span>
       </a>
       <a href="https://www.instagram.com/nizi.rainbow" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
         <img src="assets/nizi.rainbow.png" alt="虹＆phal" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
         <span class="text-base font-bold">虹＆phal</span>
-        <span class="text-xs font-semibold bg-blue-100 text-blue-500 px-2 py-0.5 rounded-full">くまパフェ、スクイーズ作り</span>
+        <span class="text-xs font-semibold bg-pink-100 text-pink-500 px-2 py-0.5 rounded-full">くまパフェ、スクイーズ作り</span>
       </a>
       <a href="https://www.instagram.com/sca.handmade.shop" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
         <img src="assets/sca.handmade.shop.png" alt="サチアハンドメイド" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
         <span class="text-base font-bold">サチアハンドメイド</span>
-        <span class="text-xs font-semibold bg-blue-100 text-blue-500 px-2 py-0.5 rounded-full">ホイップデコ、キーホルダー作り</span>
+        <span class="text-xs font-semibold bg-pink-100 text-pink-500 px-2 py-0.5 rounded-full">ホイップデコ、キーホルダー作り</span>
       </a>
       <a href="https://www.instagram.com/koguma_no.booth?igsh=cHFxa3o5MXNqc25l" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
         <img src="assets/koguma_no_booth.png" alt="こぐまのブースやさん" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
         <span class="text-base font-bold">こぐまのブースやさん</span>
-        <span class="text-xs font-semibold bg-blue-100 text-blue-500 px-2 py-0.5 rounded-full">室内フォトブース</span>
+        <span class="text-xs font-semibold bg-pink-100 text-pink-500 px-2 py-0.5 rounded-full">室内フォトブース</span>
       </a>
       <a href="https://www.instagram.com/m_kitakoyasu" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
         <img src="assets/m_kitakoyasu.png" alt="メナードフェイシャルサロン北子安" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
         <span class="text-base font-bold">メナードフェイシャルサロン北子安</span>
-        <span class="text-xs font-semibold bg-blue-100 text-blue-500 px-2 py-0.5 rounded-full">ビューティハンドケア</span>
+        <span class="text-xs font-semibold bg-pink-100 text-pink-500 px-2 py-0.5 rounded-full">ビューティハンドケア</span>
       </a>
       <a href="https://www.instagram.com/favore_m.ito" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
         <img src="assets/favore_m.ito.png" alt="FAVORE" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
         <span class="text-base font-bold">FAVORE</span>
-        <span class="text-xs font-semibold bg-blue-100 text-blue-500 px-2 py-0.5 rounded-full">ベビーマッサージ</span>
+        <span class="text-xs font-semibold bg-pink-100 text-pink-500 px-2 py-0.5 rounded-full">ベビーマッサージ</span>
       </a>
-      <a href="#" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
-        <img src="assets/sample-image.jpg" alt="サンプル店 7" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
-        <span class="text-base font-bold">サンプル店 7</span>
-        <span class="text-xs font-semibold bg-blue-100 text-blue-500 px-2 py-0.5 rounded-full">ジャンル</span>
+      <a href="https://www.instagram.com/aroma.salon.rose" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+        <img src="assets/aroma.salon.rose.png" alt="美〜Rose〜" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
+        <span class="text-base font-bold">美〜Rose〜</span>
+        <span class="text-xs font-semibold bg-pink-100 text-pink-500 px-2 py-0.5 rounded-full">デコレーション雑貨・くじ</span>
       </a>
-      <a href="#" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
-        <img src="assets/sample-image.jpg" alt="サンプル店 8" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
-        <span class="text-base font-bold">サンプル店 8</span>
-        <span class="text-xs font-semibold bg-blue-100 text-blue-500 px-2 py-0.5 rounded-full">ジャンル</span>
+      <a href="https://www.instagram.com/yoshie_sukkiri" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+        <img src="assets/yoshie_sukkiri.png" alt="すっきり" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
+        <span class="text-base font-bold">すっきり</span>
+        <span class="text-xs font-semibold bg-pink-100 text-pink-500 px-2 py-0.5 rounded-full">カラーセラピーセッション・アート</span>
       </a>
-      <a href="#" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
-        <img src="assets/sample-image.jpg" alt="サンプル店 9" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
-        <span class="text-base font-bold">サンプル店 9</span>
-        <span class="text-xs font-semibold bg-blue-100 text-blue-500 px-2 py-0.5 rounded-full">ジャンル</span>
+      <a href="https://www.instagram.com/blue_blue_happy" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+        <img src="assets/blue_blue_happy.png" alt="BLUE" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
+        <span class="text-base font-bold">BLUE</span>
+        <span class="text-xs font-semibold bg-pink-100 text-pink-500 px-2 py-0.5 rounded-full">バースデーベア・アロハボトルライト作り</span>
       </a>
-      <a href="#" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
-        <img src="assets/sample-image.jpg" alt="サンプル店 10" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
-        <span class="text-base font-bold">サンプル店 10</span>
-        <span class="text-xs font-semibold bg-blue-100 text-blue-500 px-2 py-0.5 rounded-full">ジャンル</span>
+      <a href="https://www.instagram.com/coco__luana" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+        <img src="assets/coco__luana.png" alt="coco luana" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
+        <span class="text-base font-bold">coco luana</span>
+        <span class="text-xs font-semibold bg-pink-100 text-pink-500 px-2 py-0.5 rounded-full">耳つぼジュエリー</span>
       </a>
-      <a href="#" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
-        <img src="assets/sample-image.jpg" alt="サンプル店 11" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
-        <span class="text-base font-bold">サンプル店 11</span>
-        <span class="text-xs font-semibold bg-blue-100 text-blue-500 px-2 py-0.5 rounded-full">ジャンル</span>
+      <a href="https://www.instagram.com/mikannoki.k" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+        <img src="assets/mikannoki.k.png" alt="みかんの木" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
+        <span class="text-base font-bold">みかんの木</span>
+        <span class="text-xs font-semibold bg-pink-100 text-pink-500 px-2 py-0.5 rounded-full">木製ベビー・キッズ雑貨、缶バッジの販売とワークショップ</span>
       </a>
-      <a href="#" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
-        <img src="assets/sample-image.jpg" alt="サンプル店 12" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
-        <span class="text-base font-bold">サンプル店 12</span>
-        <span class="text-xs font-semibold bg-blue-100 text-blue-500 px-2 py-0.5 rounded-full">ジャンル</span>
+      <a href="https://www.instagram.com/___r.naturally" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+        <img src="assets/___r.naturally.png" alt="マクラメベビー・キッズ雑貨" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
+        <span class="text-base font-bold">マクラメベビー・キッズ雑貨</span>
+        <span class="text-xs font-semibold bg-pink-100 text-pink-500 px-2 py-0.5 rounded-full">マクラメベビー・キッズ雑貨</span>
       </a>
-      <a href="#" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
-        <img src="assets/sample-image.jpg" alt="サンプル店 13" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
-        <span class="text-base font-bold">サンプル店 13</span>
-        <span class="text-xs font-semibold bg-blue-100 text-blue-500 px-2 py-0.5 rounded-full">ジャンル</span>
+      <a href="https://www.instagram.com/nunokomono.cocoro" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+        <img src="assets/nunokomono.cocoro.png" alt="handmade cocoro" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
+        <span class="text-base font-bold">handmade cocoro</span>
+        <span class="text-xs font-semibold bg-pink-100 text-pink-500 px-2 py-0.5 rounded-full">布小物・キーホルダー作り</span>
       </a>
-      <a href="#" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
-        <img src="assets/sample-image.jpg" alt="サンプル店 14" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
-        <span class="text-base font-bold">サンプル店 14</span>
-        <span class="text-xs font-semibold bg-blue-100 text-blue-500 px-2 py-0.5 rounded-full">ジャンル</span>
+      <a href="https://www.instagram.com/etape__candle" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+        <img src="assets/etape__candle.png" alt="etape candle" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
+        <span class="text-base font-bold">etape candle</span>
+        <span class="text-xs font-semibold bg-pink-100 text-pink-500 px-2 py-0.5 rounded-full">キャンドル・サシェ</span>
       </a>
-      <a href="#" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
-        <img src="assets/sample-image.jpg" alt="サンプル店 15" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
-        <span class="text-base font-bold">サンプル店 15</span>
-        <span class="text-xs font-semibold bg-blue-100 text-blue-500 px-2 py-0.5 rounded-full">ジャンル</span>
+      <a href="https://www.instagram.com/nlove_72" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+        <img src="assets/nlove_72.png" alt="etape candle" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
+        <span class="text-base font-bold">etape candle</span>
+        <span class="text-xs font-semibold bg-pink-100 text-pink-500 px-2 py-0.5 rounded-full">キャンドル・サシェ</span>
       </a>
-      <a href="#" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
-        <img src="assets/sample-image.jpg" alt="サンプル店 16" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
-        <span class="text-base font-bold">サンプル店 16</span>
-        <span class="text-xs font-semibold bg-blue-100 text-blue-500 px-2 py-0.5 rounded-full">ジャンル</span>
+      <a href="https://www.instagram.com/pipiandchipi" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+        <img src="assets/pipiandchipi.png" alt="pipi＆chipi" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
+        <span class="text-base font-bold">pipi＆chipi</span>
+        <span class="text-xs font-semibold bg-pink-100 text-pink-500 px-2 py-0.5 rounded-full">かぎ編みベビー・キッズ雑貨</span>
       </a>
-      <a href="#" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
-        <img src="assets/sample-image.jpg" alt="サンプル店 17" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
-        <span class="text-base font-bold">サンプル店 17</span>
-        <span class="text-xs font-semibold bg-blue-100 text-blue-500 px-2 py-0.5 rounded-full">ジャンル</span>
+      <a href="https://www.instagram.com/yasagure_rena" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+        <img src="assets/yasagure_rena.png" alt="福祉ネイル" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
+        <span class="text-base font-bold">福祉ネイル</span>
+        <span class="text-xs font-semibold bg-pink-100 text-pink-500 px-2 py-0.5 rounded-full">ネイルケア・キッズネイル</span>
       </a>
-      <a href="#" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
-        <img src="assets/sample-image.jpg" alt="サンプル店 18" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
-        <span class="text-base font-bold">サンプル店 18</span>
-        <span class="text-xs font-semibold bg-blue-100 text-blue-500 px-2 py-0.5 rounded-full">ジャンル</span>
+      <a href="https://www.instagram.com/handmade_bluevert" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+        <img src="assets/handmade_bluevert.png" alt="BlueVert" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
+        <span class="text-base font-bold">BlueVert</span>
+        <span class="text-xs font-semibold bg-pink-100 text-pink-500 px-2 py-0.5 rounded-full">ベビー服・ベビーグッズ</span>
       </a>
-      <a href="#" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
-        <img src="assets/sample-image.jpg" alt="サンプル店 19" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
-        <span class="text-base font-bold">サンプル店 19</span>
-        <span class="text-xs font-semibold bg-blue-100 text-blue-500 px-2 py-0.5 rounded-full">ジャンル</span>
+      <a href="https://www.instagram.com/soapandwire" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+        <img src="assets/soapandwire.png" alt="Guilty Pleasure" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
+        <span class="text-base font-bold">Guilty Pleasure</span>
+        <span class="text-xs font-semibold bg-pink-100 text-pink-500 px-2 py-0.5 rounded-full">プルプル石けん作り</span>
       </a>
-      <a href="#" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
-        <img src="assets/sample-image.jpg" alt="サンプル店 20" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
-        <span class="text-base font-bold">サンプル店 20</span>
-        <span class="text-xs font-semibold bg-blue-100 text-blue-500 px-2 py-0.5 rounded-full">ジャンル</span>
+      <a href="https://www.instagram.com/tsgarden_art" target="_blank" class="flex flex-col items-center gap-2 p-4 bg-[var(--base)] rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+        <img src="assets/tsgarden_art.png" alt="T's garden" class="w-24 h-24 object-cover rounded-lg border-4 border-white ring-2 ring-blue-200 hover:ring-amber-400 transition">
+        <span class="text-base font-bold">T's garden</span>
+        <span class="text-xs font-semibold bg-pink-100 text-pink-500 px-2 py-0.5 rounded-full">夏らしい手形アート作り</span>
       </a>
       </div>
   </section>
@@ -190,17 +196,17 @@
       </div>
       
       <div class="flex flex-col items-center p-4 bg-amber-400/50 rounded-xl shadow">
-        <span class="text-5xl" role="img" aria-label="おむつ替え">🚼</span>
+        <span class="text-5xl" role="img" aria-label="おむつ替え">👶</span>
         <p class="mt-2 font-semibold">おむつ替え</p>
       </div>
 
       <div class="flex flex-col items-center p-4 bg-amber-400/50 rounded-xl shadow">
-        <span class="text-5xl" role="img" aria-label="キッズスペース">👭🏻</span>
+        <span class="text-5xl" role="img" aria-label="キッズスペース">🧸</span>
         <p class="mt-2 font-semibold">キッズスペース</p>
       </div>
       
       <div class="flex flex-col items-center p-4 bg-amber-400/50 rounded-xl shadow">
-        <span class="text-5xl" role="img" aria-label="ベビーカーOK">👶</span>
+        <span class="text-5xl" role="img" aria-label="ベビーカーOK">💕</span>
         <p class="mt-2 font-semibold">ベビーカーOK</p>
       </div>
 
@@ -230,7 +236,7 @@
     </div>
   </section>
 
-  <section id="contact" class="py-16 bg-[var(--base)]"><h2 class="text-3xl font-extrabold text-center mb-8">お問い合わせ</h2><p class="text-center">ご質問は <a href="mailto:info@example.com" class="text-[var(--accent)] underline">rnaturally@icloud.com</a> までお気軽にどうぞ</p></section>
+  <section id="contact" class="py-16 bg-[var(--base)]"><h2 class="text-3xl font-extrabold text-center mb-8">お問い合わせ</h2><p class="text-center">ご質問は <a href="mailto:rnaturally@icloud.com" class="text-[var(--accent)] underline">rnaturally@icloud.com</a> までお気軽にどうぞ</p></section>
 
   <footer class="text-center text-xs py-8 bg-white text-[var(--text)]">主催・運営　　r.naturally　一般社団法人みかんの木</footer>
 
